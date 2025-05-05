@@ -54,5 +54,4 @@ These metrics help ensure the model not only identifies fraud correctly but also
 - Matplotlib, Seaborn
 - Scikit-learn
 
-## 📁 Project Structure
 
