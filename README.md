@@ -89,12 +89,6 @@ The model uses the [Kaggle Credit Card Fraud Detection dataset](https://www.kagg
 
 ---
 
-### 📌 Example Screenshot
-
-*Add a screenshot here after running the app*
-
----
-
 ### 📄 License
 
 This project is licensed under the MIT License.
