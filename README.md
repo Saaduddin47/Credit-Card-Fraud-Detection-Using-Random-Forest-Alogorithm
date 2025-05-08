@@ -1,57 +1,108 @@
-# 💳 Credit Card Fraud Detection
 
-This project is a machine learning-based system to detect fraudulent credit card transactions using the **Random Forest** classification algorithm. It is designed to analyze transaction data and accurately classify transactions as either legitimate or fraudulent.
+## 💳 Credit Card Fraud Detection Using Random Forest
 
-## 🔍 Project Objective
+This project implements a desktop application using **Tkinter** and **Random Forest Classifier** to detect fraudulent credit card transactions. It provides an intuitive GUI to upload datasets, train a model, predict fraud, and visualize results.
 
-To develop a reliable and accurate fraud detection system that:
-- Detects fraudulent transactions in real-time or batch mode.
-- Minimizes false positives while catching fraudulent behavior.
-- Is interpretable and efficient for practical implementation.
+---
 
-## 📊 Dataset
+### 📌 Features
 
-The dataset used is the **Credit Card Fraud Detection dataset** available on [Kaggle](https://www.kaggle.com/mlg-ulb/creditcardfraud). It contains transactions made by European cardholders in September 2013 and includes:
+* Upload a CSV dataset of credit card transactions.
+* Automatically preprocesses and splits the dataset into training and testing sets.
+* Trains a Random Forest Classifier to detect fraud.
+* Predicts fraudulent or clean transactions from a separate test file.
+* Visualizes results with a bar graph showing fraud vs. normal transactions.
 
-- **Total records:** 284,807
-- **Fraudulent transactions:** 492 (0.172%)
-- **Features:** 30 (V1-V28 are PCA-transformed features, plus Time and Amount)
+---
 
-> **Note:** The dataset is highly imbalanced, which makes this a good use case for robust classifiers like Random Forest.
+### 🖼 GUI Preview
 
-## 🧠 Machine Learning Model
+The application is built using Python’s Tkinter library for a desktop-based interface. Key buttons include:
 
-### Algorithm: Random Forest Classifier
+* **Upload Credit Card Dataset**
+* **Generate Train & Test Model**
+* **Run Random Forest Algorithm**
+* **Detect Fraud From Test Data**
+* **Clean & Fraud Transaction Detection Graph**
+* **Exit**
 
-Random Forest is an ensemble method based on decision trees, providing high accuracy, robustness to overfitting, and feature importance.
+---
 
-### Steps Involved:
-1. **Data Preprocessing**
-   - Handling class imbalance using undersampling or SMOTE
-   - Normalizing `Amount` and `Time` features
-2. **Model Training**
-   - Splitting dataset into train and test sets (e.g., 80:20)
-   - Training the Random Forest classifier
-3. **Model Evaluation**
-   - Accuracy
-   - Precision, Recall, F1-score
-   - Confusion Matrix
+### 🛠 Tech Stack
 
-## 📈 Evaluation Metrics
+* **Language:** Python
+* **Libraries:**
 
-The model's performance is evaluated using:
+  * `sklearn`
+  * `numpy`
+  * `pandas`
+  * `matplotlib`
+  * `tkinter`
 
-- **Accuracy**
-- **Precision**
-- **Recall**
+---
 
-These metrics help ensure the model not only identifies fraud correctly but also reduces false alarms.
+### 📂 Dataset
 
-## 🛠️ Technologies Used
+The model uses the [Kaggle Credit Card Fraud Detection dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud), where:
 
-- Python
-- NumPy, Pandas
-- Matplotlib, Seaborn
-- Scikit-learn
+* Features `V1` to `V28` are PCA components.
+* `Amount` and `Time` are original features.
+* `Class` = 1 indicates a fraud transaction.
 
+---
+
+### ⚙️ How to Run
+
+1. Clone this repository:
+
+
+2. Install required libraries:
+
+   ```bash
+   pip install pandas numpy scikit-learn matplotlib
+   ```
+
+3. Run the application:
+
+   ```bash
+   python fraud_detection_gui.py
+   ```
+
+4. Use the buttons to:
+
+   * Upload dataset (CSV)
+   * Train the model
+   * Predict using test file
+   * View classification graph
+
+---
+
+### 📊 Output
+
+* Accuracy of the model on test data
+* Printed predictions of 50 transactions
+* Graph showing:
+
+  * Total transactions tested
+  * Number of fraud transactions
+  * Number of clean transactions
+
+---
+
+### 📌 Example Screenshot
+
+*Add a screenshot here after running the app*
+
+---
+
+### 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+### 🙋‍♂️ Author
+
+**Syed Saaduddin Azhaan**
+[LinkedIn](https://www.linkedin.com/in/syed-saaduddin-b7682726b/) | [GitHub](https://github.com/Saaduddin47)
 
